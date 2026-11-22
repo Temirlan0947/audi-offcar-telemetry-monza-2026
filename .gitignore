@@ -1,0 +1,7 @@
+__pycache__/
+/monza-demo/
+*.py[cod]
+data/.writer.lock*
+data/.build-*/
+data/telemetry.sqlite-wal
+data/telemetry.sqlite-shm

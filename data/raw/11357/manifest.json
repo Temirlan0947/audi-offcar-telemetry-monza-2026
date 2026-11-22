@@ -1,0 +1,217 @@
+{
+  "session_key": 11357,
+  "team": "Audi",
+  "status": "complete",
+  "files": {
+    "session/sessions.json.gz": {
+      "endpoint": "sessions",
+      "driver": null,
+      "url": "https://api.openf1.org/v1/sessions?session_key=11357",
+      "received_at": "2026-11-22T13:50:34.138791+00:00",
+      "http_status": 200,
+      "rows": 1,
+      "sha256": "4bec6d090ecff0befdfd218f705548b05fb54fd76279b8ac26b3689ebb10f694",
+      "download_seconds": 4.2308
+    },
+    "session/drivers.json.gz": {
+      "endpoint": "drivers",
+      "driver": null,
+      "url": "https://api.openf1.org/v1/drivers?session_key=11357&team_name=Audi",
+      "received_at": "2026-11-22T13:50:35.762734+00:00",
+      "http_status": 200,
+      "rows": 4,
+      "sha256": "c0cb4dc2058f1e7269aeddd938759970eeb6255de93ef7dd9b04be051dd9e012",
+      "download_seconds": 1.6199
+    },
+    "session/race_control.json.gz": {
+      "endpoint": "race_control",
+      "driver": null,
+      "url": "https://api.openf1.org/v1/race_control?session_key=11357",
+      "received_at": "2026-11-22T13:50:37.992819+00:00",
+      "http_status": 200,
+      "rows": 53,
+      "sha256": "4e9eedfe40a69907e0ea72d4793e7af92befd236e8725471178102a6b81729b1",
+      "download_seconds": 2.2247
+    },
+    "car-5/laps.json.gz": {
+      "endpoint": "laps",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/laps?session_key=11357&driver_number=5",
+      "received_at": "2026-11-22T13:50:46.264353+00:00",
+      "http_status": 200,
+      "rows": 12,
+      "sha256": "0accd8ef353b67b08d4c7ef92cb7c2f0a897c61e985eaaa56f85b8720cb6ce98",
+      "download_seconds": 8.2665
+    },
+    "car-5/stints.json.gz": {
+      "endpoint": "stints",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/stints?session_key=11357&driver_number=5",
+      "received_at": "2026-11-22T13:50:47.620152+00:00",
+      "http_status": 200,
+      "rows": 4,
+      "sha256": "3cfe7a21bd24fc1a4bbdd91912e806ed0cb09f274929a34c077ca0c0b7224162",
+      "download_seconds": 1.3511
+    },
+    "car-5/pit.json.gz": {
+      "endpoint": "pit",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/pit?session_key=11357&driver_number=5",
+      "received_at": "2026-11-22T13:50:48.690785+00:00",
+      "http_status": 404,
+      "rows": 0,
+      "sha256": "79e458c7f1cd32213fb418a50acca1646db353c29a8775154e0fbf8bc6ebd79d",
+      "download_seconds": 1.0658
+    },
+    "car-5/car_data-00.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3C2026-09-05T14:10:00Z",
+      "received_at": "2026-11-22T13:50:53.980793+00:00",
+      "http_status": 200,
+      "rows": 4862,
+      "sha256": "6702ed96a65ea15658cda1683a3709a15108ddcda4cfb72efa5dfcc20c71d512",
+      "download_seconds": 5.2731
+    },
+    "car-5/car_data-01.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3E=2026-09-05T14:10:00Z&date%3C2026-09-05T14:20:00Z",
+      "received_at": "2026-11-22T13:50:56.060055+00:00",
+      "http_status": 200,
+      "rows": 2234,
+      "sha256": "29e08dc40685560459a6a4090778cf67b6a45f7a0634b4a4d36b1c409de8fe46",
+      "download_seconds": 2.0707
+    },
+    "car-5/car_data-02.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3E=2026-09-05T14:20:00Z&date%3C2026-09-05T14:30:00Z",
+      "received_at": "2026-11-22T13:50:57.613040+00:00",
+      "http_status": 200,
+      "rows": 2266,
+      "sha256": "3ee0c8e86c594cee4c1f27603078588b7ed747d98f413c398d758900371a0179",
+      "download_seconds": 1.5447
+    },
+    "car-5/car_data-03.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3E=2026-09-05T14:30:00Z&date%3C2026-09-05T14:40:00Z",
+      "received_at": "2026-11-22T13:50:58.555520+00:00",
+      "http_status": 200,
+      "rows": 2260,
+      "sha256": "a7c807fb55d0b96b9652e623ec18d37996e95fcdfcfeb2a3c2281bab8d80836f",
+      "download_seconds": 0.9309
+    },
+    "car-5/car_data-04.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3E=2026-09-05T14:40:00Z&date%3C2026-09-05T14:50:00Z",
+      "received_at": "2026-11-22T13:51:00.958392+00:00",
+      "http_status": 200,
+      "rows": 2251,
+      "sha256": "a6b5adf24c672626341e1963106c806457fab3d3297f3079c430eaa360adbea6",
+      "download_seconds": 2.3947
+    },
+    "car-5/car_data-05.json.gz": {
+      "endpoint": "car_data",
+      "driver": 5,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=5&date%3E=2026-09-05T14:50:00Z",
+      "received_at": "2026-11-22T13:51:03.545019+00:00",
+      "http_status": 200,
+      "rows": 3036,
+      "sha256": "2aa3c1b0d0406307d4215fa403d6645335233a05a18c19756af65d056c9013b4",
+      "download_seconds": 2.5753
+    },
+    "car-27/laps.json.gz": {
+      "endpoint": "laps",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/laps?session_key=11357&driver_number=27",
+      "received_at": "2026-11-22T13:51:06.290599+00:00",
+      "http_status": 200,
+      "rows": 12,
+      "sha256": "9e44ec145d3c49f515bca7a6279a911cf4437e67513883af25259c6c1e606275",
+      "download_seconds": 2.7416
+    },
+    "car-27/stints.json.gz": {
+      "endpoint": "stints",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/stints?session_key=11357&driver_number=27",
+      "received_at": "2026-11-22T13:51:07.930509+00:00",
+      "http_status": 200,
+      "rows": 4,
+      "sha256": "32d33c835820010c61f30d49eb6716fdcd58ffff359f4e4baaf9c0b8a2c40e59",
+      "download_seconds": 1.6348
+    },
+    "car-27/pit.json.gz": {
+      "endpoint": "pit",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/pit?session_key=11357&driver_number=27",
+      "received_at": "2026-11-22T13:51:08.572255+00:00",
+      "http_status": 404,
+      "rows": 0,
+      "sha256": "79e458c7f1cd32213fb418a50acca1646db353c29a8775154e0fbf8bc6ebd79d",
+      "download_seconds": 0.6364
+    },
+    "car-27/car_data-00.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3C2026-09-05T14:10:00Z",
+      "received_at": "2026-11-22T13:51:15.457156+00:00",
+      "http_status": 200,
+      "rows": 4862,
+      "sha256": "8e6604b3bf208955b66455e80a6653435fbf1e34d06ec632fe1a83e50ed0af78",
+      "download_seconds": 6.8677
+    },
+    "car-27/car_data-01.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3E=2026-09-05T14:10:00Z&date%3C2026-09-05T14:20:00Z",
+      "received_at": "2026-11-22T13:51:19.615918+00:00",
+      "http_status": 200,
+      "rows": 2234,
+      "sha256": "6ceede6bd8cd78eeddbefe6b4f9856f28117e67e4cc42aadace61097c3254c7a",
+      "download_seconds": 4.1468
+    },
+    "car-27/car_data-02.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3E=2026-09-05T14:20:00Z&date%3C2026-09-05T14:30:00Z",
+      "received_at": "2026-11-22T13:51:20.553829+00:00",
+      "http_status": 200,
+      "rows": 2266,
+      "sha256": "f5f48114effd0d0da046fdd6a15fb401b0c8bf981af9ce1e00cf84f7b22e5bef",
+      "download_seconds": 0.9311
+    },
+    "car-27/car_data-03.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3E=2026-09-05T14:30:00Z&date%3C2026-09-05T14:40:00Z",
+      "received_at": "2026-11-22T13:51:23.178325+00:00",
+      "http_status": 200,
+      "rows": 2260,
+      "sha256": "59ee28d642ec008253415d7fb3b09a956ba3d13f41126f68cc4e39cb3409ecd7",
+      "download_seconds": 2.616
+    },
+    "car-27/car_data-04.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3E=2026-09-05T14:40:00Z&date%3C2026-09-05T14:50:00Z",
+      "received_at": "2026-11-22T13:51:23.937928+00:00",
+      "http_status": 200,
+      "rows": 2251,
+      "sha256": "9456f8a93d44669205d8bf901cf7b68413d34751960df3e3c1ececae2535e00b",
+      "download_seconds": 0.7485
+    },
+    "car-27/car_data-05.json.gz": {
+      "endpoint": "car_data",
+      "driver": 27,
+      "url": "https://api.openf1.org/v1/car_data?session_key=11357&driver_number=27&date%3E=2026-09-05T14:50:00Z",
+      "received_at": "2026-11-22T13:51:25.066573+00:00",
+      "http_status": 200,
+      "rows": 3036,
+      "sha256": "8f8b1a2e991a8d1ac547f8afa56dbe31522b2c87a8a459427a499a38affa17f1",
+      "download_seconds": 1.1188
+    }
+  }
+}

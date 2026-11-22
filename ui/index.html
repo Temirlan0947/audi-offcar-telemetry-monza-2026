@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Monza qualifying · Off-car telemetry</title>
+<!-- Embedded Barlow fonts
+/* FONT_LICENSE */
+-->
+<style>/* THEME */</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="mark" aria-hidden="true"></span>Off-car telemetry</div>
+  <nav aria-label="Workspace"><button id="nav-compare" aria-current="page">Lap comparison</button><button id="nav-session">Session data</button></nav>
+  <span class="source-tag"><i></i> Local archive</span>
+</header>
+<main>
+  <header class="mast">
+    <div><p class="kicker">Audi <span>/</span> 2026 Italian Grand Prix</p><h1>Monza qualifying</h1></div>
+    <dl class="session-meta"><div><dt>Session date</dt><dd>05 Sep 2026</dd></div><div><dt>Circuit length</dt><dd>5.793 km</dd></div></dl>
+  </header>
+  <section id="comparison" aria-label="Lap comparison">
+    <div class="pair-grid">
+      <article class="driver-card lap-a" id="card-a"></article>
+      <article class="driver-card lap-b" id="card-b"></article>
+      <article class="delta-card"><div class="label">Lap delta <span class="formula">B − A</span></div><strong id="lap-delta"></strong><div id="lap-verdict"></div></article>
+    </div>
+    <div class="workspace-grid">
+      <section class="plot-panel">
+        <header class="plot-head"><div><h2>Telemetry overlay</h2><div id="plot-legend" class="legend"></div></div><button type="button" id="zoom" aria-pressed="false">Zoom to section</button></header>
+        <div class="plot-wrap"><canvas id="traces" tabindex="0" aria-label="Telemetry by distance. Drag across the plot to select a section. Use left and right arrows to inspect channels. Numeric controls are available in Section analysis."></canvas></div>
+        <div class="axis-note"><span>Estimated lap distance · m</span><span class="gap-key">Coverage gap</span></div>
+        <div class="readout"><div class="readout-heading"><span>Cursor</span><strong id="cursor-m"></strong></div><div class="readout-values" id="cursor-values"></div></div>
+      </section>
+      <aside class="inspector">
+        <header><div class="label">Distance window</div><h2>Section analysis</h2></header>
+        <div class="bounds">
+          <label>Entry <span><input type="number" id="from-m" min="0" max="5792" step="1" value="2850" aria-label="Entry distance in metres"> m</span></label>
+          <label>Exit <span><input type="number" id="to-m" min="1" max="5793" step="1" value="3600" aria-label="Exit distance in metres"> m</span></label>
+        </div>
+        <div class="range-actions"><span id="section-length"></span><button type="button" id="full-range">Select full lap</button></div>
+        <div class="section-result"><span class="label">Estimated section delta · B − A</span><strong id="section-delta"></strong><span id="section-verdict"></span></div>
+        <table class="section-table"><thead id="section-head"></thead><tbody id="section-rows"></tbody></table>
+        <p class="hint">Drag across the plot or set the entry and exit distances above.</p>
+      </aside>
+    </div>
+    <div class="support-grid">
+      <section class="panel"><h2>Sector timing checks</h2><p class="sub">Cumulative delta at each timing line, in seconds.</p>
+        <div class="scroll"><table><thead><tr><th>Line</th><th>Distance</th><th>Timing B − A</th><th>Trace B − A</th><th>Difference</th></tr></thead><tbody id="checks"></tbody></table></div>
+      </section>
+      <section class="panel"><h2>Lap quality</h2><div class="scroll"><table><thead id="quality-head"></thead><tbody id="quality-rows"></tbody></table></div></section>
+    </div>
+    <details class="method"><summary>Distance, data gaps and timing precision</summary>
+      <p>Distance is estimated by integrating speed over the original timestamps. A continuous lap is scaled once to the 5,793 m centreline. A gap longer than 1.0 s or a missing speed splits the trace. Each surviving piece needs a timing-line anchor. Hatched regions have no reliable distance comparison.</p>
+      <p>OpenF1 lap starts are approximate. The timing checks compare distance-based estimates against cumulative sector times. A line used as an anchor is marked in the table. Pedal readings use the preceding valid sample within each piece. Unknown values appear as a dash. Vmax uses recorded speed samples. Speed trap is the reading at a fixed timing point.</p>
+      <p>The public channels show changes in speed at full throttle. Battery charge and MGU-K power are unavailable in this feed.</p>
+    </details>
+  </section>
+  <section id="session-data" aria-label="Session data" hidden>
+    <div class="inventory" id="inventory"></div>
+    <p id="load-stat" class="sub"></p>
+    <section class="panel register"><h2>Lap register</h2><p class="sub">Timed laps are available in the comparison. Pit-lane and incomplete laps are retained in the archive.</p>
+      <div class="scroll"><table><thead><tr><th>Car</th><th>Lap</th><th>Phase</th><th>Start UTC</th><th>Lap time</th><th>S1 · s</th><th>S2 · s</th><th>S3 · s</th><th>Tyre</th><th>Samples</th><th>Max gap · s</th><th>Status</th></tr></thead><tbody id="lap-register"></tbody></table></div>
+    </section>
+    <details class="method"><summary id="event-title">Race control</summary><div class="scroll"><table><thead><tr><th>UTC</th><th>Phase</th><th>Message</th></tr></thead><tbody id="events"></tbody></table></div></details>
+  </section>
+</main>
+<footer><span>Monza 2026 <b>·</b> Session 11357</span><span><a href="https://openf1.org/docs/" target="_blank" rel="noreferrer">OpenF1 data ↗</a><a href="https://www.fia.com/system/files/decision-document/2026_italian_grand_prix_-_competition_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_red_zone.pdf" target="_blank" rel="noreferrer">FIA circuit map ↗</a></span></footer>
+<script id="session-json" type="application/json">{{SESSION_DATA}}</script>
+<script>/* APPLICATION */</script>
+</body>
+</html>

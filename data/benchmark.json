@@ -1,0 +1,25 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "logical_cpus": 12,
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "session_key": 11357,
+  "samples": 33818,
+  "lap_pair": [
+    "27-11",
+    "5-11"
+  ],
+  "raw_response_bytes_gzip": 234379,
+  "manifest_bytes": 8872,
+  "sqlite_bytes": 1040384,
+  "download_requests": 21,
+  "source_request_seconds_sum": 54.99,
+  "pair_read_and_align_ms_median": 1.197,
+  "pair_read_and_align_ms_p95": 1.473,
+  "pair_read_and_align_trials": 40,
+  "archive_to_sqlite_s": 0.1586,
+  "sqlite_to_html_s": 0.026,
+  "html_bytes": 390901
+}
